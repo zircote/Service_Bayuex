@@ -2,6 +2,7 @@
 
 ### Publishing
 ```php
+<?php
 $b = new Zirc_Service_Bayuex(array('url' => 'http://127.0.0.1:8080/cometd'));
 // Send Multiple messages
 $payload = array(
@@ -24,6 +25,7 @@ $b->publish('/chat/demo',array('user' => 'zircote', 'chat' => 'single message'))
 
 ### Subscribing and polling
 ```php
+<?php
 $b = new Zirc_Service_Bayuex(array('url' => 'http://127.0.0.1:8080/cometd'));
 $b->subscribe(array('/chat/demo', '/some/test/'));
 $o = 0;
